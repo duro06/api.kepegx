@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateHarisTable extends Migration
+class CreateMasterCutisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateHarisTable extends Migration
      */
     public function up()
     {
-        Schema::create('haris', function (Blueprint $table) {
+        Schema::create('master_cutis', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('jenispegawai_id')->nullable();
             $table->string('nama')->nullable();
-            $table->string('name')->nullable();
+            $table->integer('jumlah')->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ class CreateHarisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('haris');
+        Schema::dropIfExists('master_cutis');
     }
 }

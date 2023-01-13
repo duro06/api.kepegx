@@ -15,6 +15,12 @@ class CreateKategoriesTable extends Migration
     {
         Schema::create('kategories', function (Blueprint $table) {
             $table->id();
+            $table->string('nama')->nullable();
+            $table->time('masuk')->nullable();
+            $table->time('pulang')->nullable();
+            $table->string('warna')->nullable();
+            $table->bigInteger('jam')->nullable()->comment('durasi jam per minggu');
+            $table->bigInteger('menit')->nullable()->comment('durasi menit lebihnya jam per minggu');
             $table->timestamps();
         });
     }

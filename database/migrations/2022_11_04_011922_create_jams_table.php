@@ -15,6 +15,8 @@ class CreateJamsTable extends Migration
     {
         Schema::create('jams', function (Blueprint $table) {
             $table->id();
+            $table->time('masuk')->nullable();
+            $table->time('pulang')->nullable();
             $table->timestamps();
         });
     }
