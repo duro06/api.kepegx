@@ -19,9 +19,12 @@ class DatabaseSeeder extends Seeder
             // HariSeeder::class,
             // JamSeeder::class,
             // KategorySeeder::class,
-            MenuSeeder::class,
-            SubmenuSeeder::class,
-            UserSeeder::class
+            // MenuSeeder::class,
+            // SubmenuSeeder::class,
+            // UserSeeder::class,
+            // AplikasiSeeder::class,
+            // RoleSeeder::class,
+            // AksesSeeder::class,
         ]);
     }
 }
