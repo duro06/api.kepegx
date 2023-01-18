@@ -15,8 +15,8 @@ class CreateAplikasisTable extends Migration
     {
         Schema::create('aplikasis', function (Blueprint $table) {
             $table->id();
-            $table->string('nama')->default('null');
-            $table->string('aplikasi')->default('null');
+            $table->string('nama')->default(null)->nullable();
+            $table->string('aplikasi')->default(null)->nullable();
             $table->timestamps();
         });
     }

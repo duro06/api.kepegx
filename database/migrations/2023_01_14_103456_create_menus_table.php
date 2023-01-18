@@ -16,10 +16,10 @@ class CreateMenusTable extends Migration
         Schema::create('menus', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('aplikasi_id')->nullable();
-            $table->string('nama')->default('null');
-            $table->string('name')->default('null');
-            $table->string('icon')->default('null');
-            $table->string('link')->default('null');
+            $table->string('nama')->default(null)->nullable();
+            $table->string('name')->default(null)->nullable();
+            $table->string('icon')->default(null)->nullable();
+            $table->string('link')->default(null)->nullable();
             $table->timestamps();
         });
     }

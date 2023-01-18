@@ -39,7 +39,7 @@ class AksesSeeder extends Seeder
             [
                 'role' => 5,
                 'aplikasi_id' =>  1,
-                'submenu' => [5,  8,  9,  10]
+                'submenu' => [5,  8,  9,  10, 28, 29]
             ],
             [
                 'role' => 6,

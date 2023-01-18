@@ -22,8 +22,8 @@ class DatabaseSeeder extends Seeder
             // MenuSeeder::class,
             // SubmenuSeeder::class,
             // UserSeeder::class,
-            // AplikasiSeeder::class,
             // RoleSeeder::class,
+            // AplikasiSeeder::class,
             // AksesSeeder::class,
         ]);
     }
